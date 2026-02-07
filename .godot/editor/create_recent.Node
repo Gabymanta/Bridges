@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 TextureRect
 HBoxContainer
 VBoxContainer
@@ -8,3 +9,19 @@ TextureButton
 CollisionShape2D
 Sprite2D
 CharacterBody2D
+=======
+AudioStreamPlayer2D      - Matches the "sound" keyword.
+AnimatedSprite2D
+Node
+CollisionShape2D
+Sprite2D
+Area2D
+Timer
+TileMapLayer
+AudioStreamPlayer2D
+Label
+TextureButton
+TextureRect
+TileMap
+Camera2D
+>>>>>>> 9ca4cdd5b8b55d95c823703f6fab274a0873ae1d
