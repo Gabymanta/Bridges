@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dibpj5n2r4huf"]
+
+[node name="Base enemy" type="CharacterBody2D" unique_id=1157312993]
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=450356219]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34894224]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1260412573]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2056446048]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1601128285]
