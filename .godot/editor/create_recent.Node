@@ -1,8 +1,8 @@
+TileMapLayer
 AudioStreamPlayer2D
 Label
 TextureButton
 TextureRect
-TileMapLayer
 TileMap
 Timer
 Camera2D
@@ -12,4 +12,3 @@ Area2D
 AnimationTree
 AnimationPlayer
 Sprite2D
-CharacterBody2D
