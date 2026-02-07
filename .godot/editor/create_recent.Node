@@ -1,4 +1,10 @@
+TextureRect
+HBoxContainer
+VBoxContainer
+AudioStreamPlayer
+Label
+AudioStreamPlayer2D
+TextureButton
 CollisionShape2D
 Sprite2D
 CharacterBody2D
-Label

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cnp8wow1drl1v"]
+
+[ext_resource type="Texture2D" uid="uid://du1ry0b1dg5vy" path="res://Asset/pixel heart 2.png" id="1_ilc2u"]
+
+[node name="UI" type="Control" unique_id=2005687299]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2126699622]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 10
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1844703787]
+layout_mode = 2
+texture = ExtResource("1_ilc2u")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer" unique_id=445875033]
+layout_mode = 2
+texture = ExtResource("1_ilc2u")
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer" unique_id=1865658158]
+layout_mode = 2
+texture = ExtResource("1_ilc2u")
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer" unique_id=88367180]
+layout_mode = 2
+texture = ExtResource("1_ilc2u")
+
+[node name="TextureRect5" type="TextureRect" parent="HBoxContainer" unique_id=549853599]
+layout_mode = 2
+texture = ExtResource("1_ilc2u")
