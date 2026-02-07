@@ -1,10 +1,15 @@
+AudioStreamPlayer2D
+Label
+TextureButton
+TextureRect
+TileMapLayer
+TileMap
+Timer
+Camera2D
+AudioStreamPlayer2D      - Matches the "sound" keyword.
 CollisionShape2D
 Area2D
-CharacterBody2D
-VisibleOnScreenNotifier2D
-AnimatedSprite2D
-AnimatableBody2D
-VisibleOnScreenEnabler2D
+AnimationTree
+AnimationPlayer
 Sprite2D
-StaticBody2D
-Label
+CharacterBody2D

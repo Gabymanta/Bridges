@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 res://Screnes/Base enemy/lion.tscn
+=======
+res://Screnes/Player.tscn
+res://Screnes/PlayerCam/PlayerCam.tscn
+res://Screnes/PlayerCam/PlayerCam.gd
+res://Global/SignalHub.gd
+res://Screnes/Player/Player.tscn
+res://Class/Constants.gd
+res://Screnes/Player/Player.gd
+res://Screnes/Level$/mountain_level/mountain_level.tscn
+res://test.gd
+>>>>>>> e02fce2b6357dee3188d4963d0821a76ad439ef4
