@@ -19,8 +19,7 @@ const HURT_JUMP_VELOCITY: Vector2 = Vector2(0,-130.0);
 @onready var sound: AudioStreamPlayer2D = $Sound
 @onready var hurt_timer: Timer = $HurtTimer
 @onready var player_cam: Camera2D = $PlayerCam
-
-#@onready var shooter: Shooter = $Shooter
+@onready var shooter: Shooter = $Shooter
 
 var _gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 var _is_hurts: bool = false;
@@ -41,14 +40,13 @@ func _physics_process(delta: float) -> void:
 		
 	velocity.y = clampf(velocity.y, JUMP_VELOCITY, MAX_FALL);
 	move_and_slide();
-	
 	fallen_off();
 
 func _unhandled_input(event: InputEvent) -> void:
 	if(event.is_action_pressed("Shoot")):
 		var dir: Vector2 = Vector2.LEFT if sprite_2d.flip_h \
 							else Vector2.RIGHT;
-		#shooter.shoot(dir);
+		shooter.shoot(dir);
 
 func late_init() -> void:
 	SignalHub.emit_on_player_hit(lives, false);
@@ -115,4 +113,3 @@ func _on_hit_box_area_entered(_area: Area2D) -> void:
 
 func _on_hurt_timer_timeout() -> void:
 	_is_hurts = false;
-	#_is_invincible = false;

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://brgfswa4jsnkm"]
+[gd_scene load_steps=6 format=3 uid="uid://brgfswa4jsnkm"]
 
 [ext_resource type="Texture2D" uid="uid://brkpje80k5dqd" path="res://Asset/Tiles/Terrain (16x16).png" id="1_w1eg4"]
 [ext_resource type="PackedScene" uid="uid://c0mkewonwmvu1" path="res://Screnes/Player/Player.tscn" id="2_p65jg"]
+[ext_resource type="PackedScene" uid="uid://cb5k4xvahxjpm" path="res://Screnes/object_maker/object_maker.tscn" id="3_wgaey"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p65jg"]
 texture = ExtResource("1_w1eg4")
@@ -157,7 +158,8 @@ texture = ExtResource("1_w1eg4")
 20:10/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_fd66y"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 3
+physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_p65jg")
 
 [node name="MountainLevel" type="Node2D"]
@@ -168,3 +170,5 @@ tile_set = SubResource("TileSet_fd66y")
 
 [node name="Player" parent="." instance=ExtResource("2_p65jg")]
 position = Vector2(131, 246)
+
+[node name="ObjectMaker" parent="." instance=ExtResource("3_wgaey")]

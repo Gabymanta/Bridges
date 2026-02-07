@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://duexjkiugm4ll"]
+
+[ext_resource type="Script" uid="uid://n461q6heor8y" path="res://Screnes/Shooter/shooter.gd" id="1_nofai"]
+[ext_resource type="AudioStream" uid="uid://dq4pijm475wm2" path="res://Asset/SoundEffect/sfx_wpn_laser5.wav" id="2_55n0d"]
+
+[node name="Shooter" type="Node2D"]
+script = ExtResource("1_nofai")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_55n0d")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

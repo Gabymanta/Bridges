@@ -2,10 +2,8 @@ class_name Constants
 
 enum ObjectType {
 	EXPLOSION,
-	PICKUP,
 	BULLET_PLAYER,
-	BULLET_ENEMY,
-	BULLET_ENEMY_INSTOPABLE
+	BULLET_ENEMY
 }
 
 const FALL_OFF_Y: int = 750;
