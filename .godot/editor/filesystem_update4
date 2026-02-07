@@ -1,9 +1,1 @@
-res://Screnes/Player.tscn
-res://Screnes/PlayerCam/PlayerCam.tscn
-res://Screnes/PlayerCam/PlayerCam.gd
-res://Global/SignalHub.gd
-res://Screnes/Player/Player.tscn
-res://Class/Constants.gd
-res://Screnes/Player/Player.gd
 res://Screnes/Level$/mountain_level/mountain_level.tscn
-res://test.gd

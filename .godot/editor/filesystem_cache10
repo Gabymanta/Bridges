@@ -1,6 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1770497934
+::res://::1770500588
 icon.svg::CompressedTexture2D::3523066254277393082::1770486051::1770486523::1::::<><><>0<>0<>edc84a92474d5b79802e7831acf6e1f4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+test.gd::GDScript::6957895843748533064::1770499855::0::1::::<>TextureButton<><>0<>0<><>::
 ::res://Asset/::1770499142
 enemy-deadth.png::CompressedTexture2D::8710269273473404775::1765479316::1770489105::1::::<><><>0<>0<>e36ccc2602ca34905719e23e1ddde8bd<>res://.godot/imported/enemy-deadth.png-6be3120cecbff4c7e796c0058729f0ec.ctex::
 pixel heart 2.png::CompressedTexture2D::8617789109190411706::1765479316::1770489105::1::::<><><>0<>0<>0e552889d8abed2c483f51aefbede34f<>res://.godot/imported/pixel heart 2.png-547c51fc53e102616b11643d45796653.ctex::
@@ -22,17 +23,25 @@ gemunu-libre-v8-latin-700.ttf::FontFile::2585474258369982398::1765479316::177048
 LuckiestGuy-Regular.ttf::FontFile::6026445207523698443::1765479316::1770489105::1::::<><><>0<>0<>a5d02d50a71c37940bfcd0342ffe25a9<>res://.godot/imported/LuckiestGuy-Regular.ttf-0ae044af04001cb7032cb0ad616ae51d.fontdata::
 ::res://Asset/Player/::1770492795
 player.png::CompressedTexture2D::7966001120447373132::1765479316::1770492795::1::::<><><>0<>0<>a3ab0c29cecb00433873a383b31b3efe<>res://.godot/imported/player.png-501b392f8eab61ffcf97628c8ff7e094.ctex::
-::res://Asset/Tiles/::1770499147
+::res://Asset/Tiles/::1770499157
 Terrain (16x16).png::CompressedTexture2D::3601201892339268767::1765479316::1770499157::1::::<><><>0<>0<>f3829c87f32329c53aa37f687635863f<>res://.godot/imported/Terrain (16x16).png-4cdb91f77ee394d0c2d96dd3103ea347.ctex::
 ::res://Class/::1770497675
 Constants.gd::GDScript::6376638097882921082::1770497675::0::1::::Constants<>RefCounted<><>0<>0<><>::
 ::res://Global/::1770492619
 SignalHub.gd::GDScript::3553051369208376673::1770492619::0::1::::<>Node<><>0<>0<><>::
 ::res://Resource/::1770486185
-::res://Screnes/::1770497515
-::res://Screnes/Player/::1770497946
-Player.gd::GDScript::1835441140403028133::1770497946::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::6552950482250534774::1770497946::0::1::::<><><>0<>0<><>::uid://1fdphho72k6h::::res://Screnes/Player/Player.gd<>uid://duxe3xt6vqkpm::::res://Screnes/PlayerCam/PlayerCam.tscn<>uid://dlq140bscng6o::::res://Asset/Player/player.png
+::res://Screnes/::1770500360
+eagle.tscn::PackedScene::5830959160013320399::1770500360::0::1::::<><><>0<>0<><>::uid://y7erbqsivjgg::::res://Asset/Enemies/eagle-attack.png
+::res://Screnes/Base enemy/::1770499875
+base_enemy.tscn::PackedScene::7723765602007847521::1770499875::0::1::::<><><>0<>0<><>::
+lion.tscn::PackedScene::7683782558957681572::1770499875::0::1::::<><><>0<>0<><>::uid://dibpj5n2r4huf::::res://Screnes/Base enemy/base_enemy.tscn<>uid://y7erbqsivjgg::::res://Asset/Enemies/eagle-attack.png
+shark.tscn::PackedScene::2360577778577871456::1770499875::0::1::::<><><>0<>0<><>::uid://dibpj5n2r4huf::::res://Screnes/Base enemy/base_enemy.tscn<>uid://y7erbqsivjgg::::res://Asset/Enemies/eagle-attack.png
+::res://Screnes/Level$/::1770499169
+::res://Screnes/Level$/mountain_level/::1770499855
+mountain_level.tscn::PackedScene::3592354178162211028::1770499855::0::1::::<><><>0<>0<><>::uid://brkpje80k5dqd::::res://Asset/Tiles/Terrain (16x16).png<>uid://c0mkewonwmvu1::::res://Screnes/Player/Player.tscn
+::res://Screnes/Player/::1770500445
+Player.gd::GDScript::1835441140403028133::1770499337::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::6552950482250534774::1770500445::0::1::::<><><>0<>0<><>::uid://1fdphho72k6h::::res://Screnes/Player/Player.gd<>uid://duxe3xt6vqkpm::::res://Screnes/PlayerCam/PlayerCam.tscn<>uid://dlq140bscng6o::::res://Asset/Player/player.png
 ::res://Screnes/PlayerCam/::1770492662
 PlayerCam.gd::GDScript::2889434716700649612::1770492619::0::1::::<>Camera2D<><>0<>0<><>::
 PlayerCam.tscn::PackedScene::8610813721209268002::1770492662::0::1::::<><><>0<>0<><>::uid://bhfwtkghtfejs::::res://Screnes/PlayerCam/PlayerCam.gd
