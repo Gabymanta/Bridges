@@ -1,9 +1,10 @@
+res://Screnes/ScrollingBg
+res://Asset/Enemies
 res://Screnes/Level$/tutorial_level/trigger_tutorial
 res://Global
 res://Screnes/Level$/TutorialPrompt
 res://Screnes/Level$/tutorial_level
 res://Screnes/Base enemy/Lion
-res://Asset/Enemies
 res://Screnes/Base enemy
 res://Screnes/npc_save
 res://Screnes/Base enemy/SpikeWall

@@ -20,6 +20,7 @@ const HURT_JUMP_VELOCITY: Vector2 = Vector2(0,-130.0);
 @onready var hurt_timer: Timer = $HurtTimer
 @onready var player_cam: Camera2D = $PlayerCam
 @onready var shooter: Shooter = $Shooter
+@onready var jump_sound: AudioStreamPlayer2D = $JumpSound
 
 var _gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 var _is_hurts: bool = false;
@@ -60,7 +61,7 @@ func set_camera_limits() -> void:
 func jump() -> void:
 	if( is_on_floor() && Input.is_action_just_pressed("Jump") ):
 		velocity.y = JUMP_VELOCITY;
-#		play_effect(JUMP);
+		jump_sound.play();
 
 func move() -> void:
 	var direction:float = Input.get_axis("Left", "Right");

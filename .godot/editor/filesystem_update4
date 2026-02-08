@@ -4,3 +4,8 @@ res://Screnes/UI/ui.tscn
 res://Screnes/UI/ui.gd
 res://Global/SignalHub.gd
 res://Screnes/Level$/mountain_level/mountain_level.tscn
+res://Screnes/Base enemy/Lion/lion.tscn
+res://Screnes/Level$/tutorial_level/tutorial_level.tscn
+res://Screnes/mainMenu/main_menue.gd
+res://Screnes/Player/Player.gd
+res://Screnes/Player/Player.tscn
