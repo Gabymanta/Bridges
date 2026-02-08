@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://crj5ixd3lkjk8"]
+
+[ext_resource type="Script" uid="uid://gdwdsnm6v35g" path="res://main_menue.gd" id="1_6jjk0"]
+[ext_resource type="Texture2D" uid="uid://d3vaxvl4vyljt" path="res://Asset/Button/blue_button00.png" id="1_ldtmt"]
+[ext_resource type="Texture2D" uid="uid://brnkoxr223dir" path="res://Asset/Front/26670.jpg" id="2_yf64j"]
+[ext_resource type="AudioStream" uid="uid://c66y4bp7dt1ls" path="res://Asset/sound/amongst-it-all-pecan-pie-main-version-32974-01-47.mp3" id="3_6jjk0"]
+[ext_resource type="AudioStream" uid="uid://bhnt4ca4nbo1i" path="res://Asset/sound/button-click(chosic.com).mp3" id="3_7k14n"]
+[ext_resource type="AudioStream" uid="uid://c64agf4by6epn" path="res://Asset/Front/flopp med underleppa (flanger9).wav" id="4_7k14n"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ms0q7"]
+font_size = 200
+font_color = Color(0.99100226, 0.33322006, 0.29742545, 1)
+shadow_size = 5
+shadow_color = Color(0.77428406, 0.21545148, 0.28819916, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6jjk0"]
+font_size = 55
+font_color = Color(0.089999974, 1, 0.30233335, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7k14n"]
+font_size = 55
+font_color = Color(1, 0.110000014, 0.110000014, 1)
+
+[node name="MainMenue" type="Control" unique_id=539116815]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6jjk0")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2088770091]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yf64j")
+expand_mode = 1
+
+[node name="HBoxContainer" type="VBoxContainer" parent="." unique_id=972936933]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -483.0
+offset_right = 483.0
+offset_bottom = 411.0
+grow_horizontal = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=2054929844]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "BRIDGES"
+label_settings = SubResource("LabelSettings_ms0q7")
+horizontal_alignment = 1
+
+[node name="Play Button" type="TextureButton" parent="HBoxContainer" unique_id=1914102881]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_ldtmt")
+
+[node name="Label" type="Label" parent="HBoxContainer/Play Button" unique_id=2102834518]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_6jjk0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="HBoxContainer/Play Button" unique_id=955936589]
+stream = ExtResource("3_7k14n")
+
+[node name="Quit Button" type="TextureButton" parent="HBoxContainer" unique_id=317695625]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_ldtmt")
+
+[node name="Label" type="Label" parent="HBoxContainer/Quit Button" unique_id=274951895]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_7k14n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="HBoxContainer/Quit Button/Label" unique_id=1919105823]
+stream = ExtResource("4_7k14n")
+volume_db = 24.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=64935822]
+stream = ExtResource("3_6jjk0")
+autoplay = true
+
+[connection signal="pressed" from="HBoxContainer/Play Button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Quit Button" to="." method="_on_quit_button_pressed"]
