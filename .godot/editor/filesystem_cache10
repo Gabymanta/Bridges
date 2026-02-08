@@ -212,9 +212,10 @@ Canyon Quest Cartridge.mp3::AudioStreamMP3::1191587789327286184::1770573108::177
 cayonQuestSkank.mp3::AudioStreamMP3::8729763251420268937::1770573384::1770574016::1::::<><><>0<>0<>8f27395cc3cdfb316c8fedb5171b7829<>res://.godot/imported/cayonQuestSkank.mp3-b0478bc996f8bc8c92b63d5cf0ed8e9f.mp3str::
 flopp med underleppa (flanger9).wav::AudioStreamWAV::211190674594512352::1770514327::1770514327::1::::<><><>0<>0<>410abf230e2c6950e1d1a6f20bf8a872<>res://.godot/imported/flopp med underleppa (flanger9).wav-f9faeccece349d3fb87eb28dd23af5b6.sample::
 LevelBackground.mp3::AudioStreamMP3::8251785517232131341::1770573770::1770574016::1::::<><><>0<>0<>0c65dcd64e1bde8ae8ca3d261c7c064d<>res://.godot/imported/LevelBackground.mp3-2e5b6d64b2b68093a3a1318dde3ba1e5.mp3str::
-::res://Asset/SoundEffect/::1770580278
+::res://Asset/SoundEffect/::1770580433
 damage.wav::AudioStreamWAV::5309457350376262438::1765479316::1770580281::1::::<><><>0<>0<>b16bf0a776ef18f04c72683d51d7d9f2<>res://.godot/imported/damage.wav-f588ca61b636a110ab6f482f543ed58d.sample::
 explosion.wav::AudioStreamWAV::1856266907380412347::1770506134::1770506159::1::::<><><>0<>0<>c8c548ae3fb8367cb4641d55e06f7104<>res://.godot/imported/explosion.wav-816c3dd5b1d86f326ababd42e1e5b05e.sample::
+FailSound.mp3::AudioStreamMP3::5449635027504949491::1770580321::1770580442::1::::<><><>0<>0<>af703e22d357b48eb507ea3642f36d3a<>res://.godot/imported/FailSound.mp3-347ea2702a09887bc966fa9d7b7392e9.mp3str::
 jump.wav::AudioStreamWAV::1823985503902861095::1765479316::1770502181::1::::<><><>0<>0<>ac5ece24c8e880b8a41779db1ecb34aa<>res://.godot/imported/jump.wav-f9cb5b8cb2a55d1879a0d1380403035a.sample::
 sfx_wpn_laser5.wav::AudioStreamWAV::8343076038007690267::1767453314::1770502181::1::::<><><>0<>0<>046adeec3e371ceee82013616a492e15<>res://.godot/imported/sfx_wpn_laser5.wav-060f854ca8f6b1689c79f80b6b304628.sample::
 you_win.ogg::AudioStreamOggVorbis::3674315251748797522::1765479316::1770518506::1::::<><><>0<>0<>a98b5fa074993e39cf637a6e021435f8<>res://.godot/imported/you_win.ogg-0b4d3977f1c8bf253c3a14759dc05658.oggvorbisstr::
@@ -259,9 +260,9 @@ mountain_level.gd::GDScript::1682051908824756335::1770579715::0::1::::<>Node2D<>
 ::res://Screnes/Level$/TutorialPrompt/::1770564534
 tutorial_prompt.gd::GDScript::2645932936742882477::1770564381::0::1::::<>CanvasLayer<><>0<>0<><>::
 tutorial_prompt.tscn::PackedScene::7636785449691173617::1770564534::0::1::::<><><>0<>0<><>::uid://bdxyem88ycx4h::::res://Screnes/Level$/TutorialPrompt/tutorial_prompt.gd<>uid://bt3uymnimleb5::::res://Asset/SimpleFlatKeys/Dark/E-Key.png<>uid://cr4iw367n3wb8::::res://Asset/Front/LuckiestGuy-Regular.ttf
-::res://Screnes/Level$/tutorial_level/::1770578220
+::res://Screnes/Level$/tutorial_level/::1770580361
 tutorial_level.gd::GDScript::6955552459509104188::1770567401::0::1::::<>Node2D<><>0<>0<><>::
-tutorial_level.tscn::PackedScene::4390746519677087373::1770578220::0::1::::<><><>0<>0<><>::uid://c6dk6ykl1arwm::::res://Screnes/Level$/tutorial_level/tutorial_level.gd<>uid://cb5k4xvahxjpm::::res://Screnes/object_maker/object_maker.tscn<>uid://it3m75wcxxki::::res://Asset/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/autumn_.png<>uid://din1glpuhqneu::::res://Screnes/ScrollingBg/scrolling_bg.tscn<>uid://c0mkewonwmvu1::::res://Screnes/Player/Player.tscn<>uid://3o7ws75ce118::::res://Screnes/Level$/tutorial_level/trigger_tutorial/trigger_tutorial.tscn<>uid://brccqirdfqw3n::::res://Screnes/Base enemy/eagle.tscn<>uid://djrgkc5njmivy::::res://Screnes/Base enemy/SpikeWall/spike_floor.tscn<>uid://c7mpa0tvvw5kr::::res://Screnes/npc_save/npc_save.tscn<>uid://dwm06pwv1mljl::::res://Asset/sound/cayonQuestSkank.mp3<>uid://cnp8wow1drl1v::::res://Screnes/UI/ui.tscn
+tutorial_level.tscn::PackedScene::4390746519677087373::1770580361::0::1::::<><><>0<>0<><>::uid://c6dk6ykl1arwm::::res://Screnes/Level$/tutorial_level/tutorial_level.gd<>uid://cb5k4xvahxjpm::::res://Screnes/object_maker/object_maker.tscn<>uid://it3m75wcxxki::::res://Asset/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/autumn_.png<>uid://din1glpuhqneu::::res://Screnes/ScrollingBg/scrolling_bg.tscn<>uid://c0mkewonwmvu1::::res://Screnes/Player/Player.tscn<>uid://3o7ws75ce118::::res://Screnes/Level$/tutorial_level/trigger_tutorial/trigger_tutorial.tscn<>uid://brccqirdfqw3n::::res://Screnes/Base enemy/eagle.tscn<>uid://djrgkc5njmivy::::res://Screnes/Base enemy/SpikeWall/spike_floor.tscn<>uid://c7mpa0tvvw5kr::::res://Screnes/npc_save/npc_save.tscn<>uid://dwm06pwv1mljl::::res://Asset/sound/cayonQuestSkank.mp3<>uid://cnp8wow1drl1v::::res://Screnes/UI/ui.tscn
 ::res://Screnes/Level$/tutorial_level/trigger_tutorial/::1770566124
 trigger_tutorial.gd::GDScript::849346703514495549::1770565181::0::1::::<>Area2D<><>0<>0<><>::
 trigger_tutorial.tscn::PackedScene::1996172137876145661::1770566124::0::1::::<><><>0<>0<><>::uid://mdou7h2xtvnh::::res://Screnes/Level$/tutorial_level/trigger_tutorial/trigger_tutorial.gd
@@ -276,14 +277,14 @@ npc_save.gd::GDScript::3263837751496171349::1770518752::0::1::::<>Area2D<><>0<>0
 npc_save.tscn::PackedScene::7044568995161596861::1770518889::0::1::::<><><>0<>0<><>::uid://bmra6wewsbrqj::::res://Screnes/npc_save/npc_save.gd<>uid://cddyplelivln5::::res://Asset/Player/blond_idle_exportTest.png<>uid://bsl4o2j4pe64m::::res://Asset/SoundEffect/you_win.ogg
 ::res://Screnes/object_maker/::1770506263
 object_maker.tscn::PackedScene::4905621742085149718::1770506263::0::1::::<><><>0<>0<><>::uid://len5npr8emyi::::res://Class/object_maker.gd
-::res://Screnes/Player/::1770580207
+::res://Screnes/Player/::1770580291
 Player.gd::GDScript::1835441140403028133::1770580207::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::6552950482250534774::1770580207::0::1::::<><><>0<>0<><>::uid://1fdphho72k6h::::res://Screnes/Player/Player.gd<>uid://duxe3xt6vqkpm::::res://Screnes/PlayerCam/PlayerCam.tscn<>uid://cakdf433rb5ya::::res://Asset/Player/try/43X43-ensemble.png<>uid://duexjkiugm4ll::::res://Screnes/Shooter/shooter.tscn<>uid://08s1lvh5whcx::::res://Asset/SoundEffect/jump.wav
+Player.tscn::PackedScene::6552950482250534774::1770580291::0::1::::<><><>0<>0<><>::uid://1fdphho72k6h::::res://Screnes/Player/Player.gd<>uid://duxe3xt6vqkpm::::res://Screnes/PlayerCam/PlayerCam.tscn<>uid://cakdf433rb5ya::::res://Asset/Player/try/43X43-ensemble.png<>uid://duexjkiugm4ll::::res://Screnes/Shooter/shooter.tscn<>uid://08s1lvh5whcx::::res://Asset/SoundEffect/jump.wav<>uid://chv68s1y3wf2m::::res://Asset/SoundEffect/damage.wav
 ::res://Screnes/PlayerCam/::1770492662
 PlayerCam.gd::GDScript::2889434716700649612::1770492619::0::1::::<>Camera2D<><>0<>0<><>::
 PlayerCam.tscn::PackedScene::8610813721209268002::1770492662::0::1::::<><><>0<>0<><>::uid://bhfwtkghtfejs::::res://Screnes/PlayerCam/PlayerCam.gd
-::res://Screnes/ScrollingBg/::1770580031
-scrolling_bg.gd::GDScript::6517968135677727169::1770580031::0::1::::<>Node2D<><>0<>0<><>::
+::res://Screnes/ScrollingBg/::1770580324
+scrolling_bg.gd::GDScript::6517968135677727169::1770580324::0::1::::<>Node2D<><>0<>0<><>::
 scrolling_bg.tscn::PackedScene::7749199669409321472::1770577863::0::1::::<><><>0<>0<><>::uid://cy4l8oig0jilt::::res://Screnes/ScrollingBg/scrolling_bg.gd
 ::res://Screnes/Shooter/::1770503332
 shooter.gd::GDScript::974251468165945742::1770503332::0::1::::Shooter<>Node2D<><>0<>0<><>::

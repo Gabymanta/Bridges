@@ -180,6 +180,7 @@ sources/0 = SubResource("TileSetAtlasSource_p65jg")
 script = ExtResource("1_21627")
 
 [node name="ScrollingBg" parent="." instance=ExtResource("1_a6vpr")]
+y_offset = -500.0
 layer_scale = 0.75
 
 [node name="NPCSave" parent="." instance=ExtResource("1_8876u")]
@@ -191,7 +192,7 @@ tile_map_data = PackedByteArray("AAAGABIAAAAGAAAAAAAHABIAAAAGAAAAAAAIABIAAAAGAAA
 tile_set = SubResource("TileSet_fd66y")
 
 [node name="Player" parent="." instance=ExtResource("2_p65jg")]
-position = Vector2(176, 254)
+position = Vector2(70, -111)
 lives = 5
 camera_max = Vector2(10001, -10000)
 
@@ -243,6 +244,16 @@ position = Vector2(1560, -46)
 
 [node name="Eagle3" parent="Enemies" instance=ExtResource("1_0bklu")]
 position = Vector2(48, -214)
+
+[node name="Eagle9" parent="Enemies" instance=ExtResource("1_0bklu")]
+position = Vector2(164, -178)
+fly_speed_R = Vector2(60, 15)
+fly_speed_L = Vector2(-60, 15)
+
+[node name="Eagle10" parent="Enemies" instance=ExtResource("1_0bklu")]
+position = Vector2(496, -297)
+fly_speed_R = Vector2(60, 15)
+fly_speed_L = Vector2(-60, 15)
 
 [node name="Eagle2" parent="Enemies" instance=ExtResource("1_0bklu")]
 position = Vector2(760, 3)

@@ -5,6 +5,7 @@ extends Control
 @onready var level_completed: VBoxContainer = $"Level Completed"
 @onready var timer: Timer = $Timer
 @onready var pause: VBoxContainer = $Pause
+@onready var loser_sound: AudioStreamPlayer2D = $LoserSound
 
 var health: Array
 var isClic: bool = false
@@ -30,6 +31,7 @@ func on_level_complete(is_complete: bool) -> void:
 	else:
 		print("end")
 		game_over.show();
+		loser_sound.play()
 	
 	get_tree().paused = true;
 	timer.start();

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cnp8wow1drl1v"]
+[gd_scene load_steps=16 format=3 uid="uid://cnp8wow1drl1v"]
 
 [ext_resource type="Texture2D" uid="uid://du1ry0b1dg5vy" path="res://Asset/pixel heart 2.png" id="1_ilc2u"]
 [ext_resource type="Script" uid="uid://b4cxxuyyg7jqj" path="res://Screnes/UI/ui.gd" id="1_p08m5"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://bhnt4ca4nbo1i" path="res://Asset/sound/button-click(chosic.com).mp3" id="4_4wi42"]
 [ext_resource type="AudioStream" uid="uid://c64agf4by6epn" path="res://Asset/Front/flopp med underleppa (flanger9).wav" id="5_jfs2s"]
 [ext_resource type="Texture2D" uid="uid://c4alc7m8gtumu" path="res://Asset/UI/white_pause.png" id="6_yeh78"]
+[ext_resource type="AudioStream" uid="uid://cjv3xs061g5tf" path="res://Asset/SoundEffect/FailSound.mp3" id="7_60tmi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_grban"]
 font_size = 120
@@ -282,6 +283,9 @@ scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("6_yeh78")
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="LoserSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_60tmi")
 
 [connection signal="pressed" from="Pause/HBoxContainer/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Pause/HBoxContainer/TextureButton2" to="." method="_on_texture_button_2_pressed"]
