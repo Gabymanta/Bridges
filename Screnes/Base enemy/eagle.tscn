@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://brccqirdfqw3n"]
+[gd_scene load_steps=11 format=3 uid="uid://brccqirdfqw3n"]
 
 [ext_resource type="Texture2D" uid="uid://y7erbqsivjgg" path="res://Asset/Enemies/eagle-attack.png" id="1_r56qn"]
 [ext_resource type="PackedScene" uid="uid://dibpj5n2r4huf" path="res://Screnes/Base enemy/base_enemy.tscn" id="1_wn0ut"]
+[ext_resource type="Script" uid="uid://dud6x63cbhy65" path="res://Screnes/Base enemy/eagle.gd" id="2_mdpkr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qj1fp"]
 radius = 13.0
@@ -39,7 +40,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ksbni")
 }],
 "loop": true,
-"name": &"default",
+"name": &"fly",
 "speed": 5.0
 }]
 
@@ -47,6 +48,10 @@ animations = [{
 radius = 13.0
 
 [node name="Eagle" instance=ExtResource("1_wn0ut")]
+script = ExtResource("2_mdpkr")
+fly_speed_R = Vector2(35, 15)
+fly_speed_L = Vector2(-35, 15)
+fly_shoot = Vector2(0, 100)
 
 [node name="CollisionShape2D" parent="." index="1"]
 position = Vector2(-1, 0)
@@ -54,9 +59,14 @@ shape = SubResource("CapsuleShape2D_qj1fp")
 
 [node name="AnimatedSprite2D" parent="." index="2"]
 sprite_frames = SubResource("SpriteFrames_k0ccw")
-autoplay = "default"
+animation = &"fly"
+autoplay = "fly"
 
 [node name="CollisionShape2D" parent="HitBox" index="0"]
 position = Vector2(-1, 0)
 scale = Vector2(1, 1.1999993)
 shape = SubResource("CapsuleShape2D_mdpkr")
+
+[node name="DirectionTime" type="Timer" parent="." index="4"]
+
+[connection signal="timeout" from="DirectionTime" to="." method="_on_direction_time_timeout"]
