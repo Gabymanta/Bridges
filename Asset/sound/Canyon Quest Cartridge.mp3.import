@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://q8hjn8h5bjwq"
+path="res://.godot/imported/Canyon Quest Cartridge.mp3-0a75b3df34a27fa93a3720a664f3f54d.mp3str"
+
+[deps]
+
+source_file="res://Asset/sound/Canyon Quest Cartridge.mp3"
+dest_files=["res://.godot/imported/Canyon Quest Cartridge.mp3-0a75b3df34a27fa93a3720a664f3f54d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
