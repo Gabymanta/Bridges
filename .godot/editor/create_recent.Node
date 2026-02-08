@@ -1,14 +1,15 @@
+AnimationPlayer
 Sprite2D
-HBoxContainer
-TextureRect
-ColorRect
-VBoxContainer
-Timer
-RayCast2D
-AudioStreamPlayer2D      - Matches the "sound" keyword.
-AnimatedSprite2D
+AudioStreamPlayer
 Node
 CollisionShape2D
 Area2D
+CanvasLayer
+VBoxContainer
+Label
+TextureRect
+HBoxContainer
+PanelContainer
 TileMapLayer
-AudioStreamPlayer2D
+TileMap
+LinkButton

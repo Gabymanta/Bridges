@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://c8jb71c2lp0qw"]
+
+[ext_resource type="PackedScene" uid="uid://dibpj5n2r4huf" path="res://Screnes/Base enemy/base_enemy.tscn" id="1_msm4p"]
+[ext_resource type="Texture2D" uid="uid://y7erbqsivjgg" path="res://Asset/Enemies/eagle-attack.png" id="2_2betk"]
+[ext_resource type="Script" uid="uid://dsd2bdbvsj1jb" path="res://Screnes/Base enemy/Lion/lion.gd" id="2_fv7xr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fv7xr"]
+radius = 12.0
+height = 34.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rattu"]
+atlas = ExtResource("2_2betk")
+region = Rect2(0, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bi1pf"]
+atlas = ExtResource("2_2betk")
+region = Rect2(40, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ydpn"]
+atlas = ExtResource("2_2betk")
+region = Rect2(80, 0, 40, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ts5e"]
+atlas = ExtResource("2_2betk")
+region = Rect2(120, 0, 40, 41)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iw5gm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rattu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bi1pf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ydpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ts5e")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mx3ri"]
+radius = 20.0
+height = 42.0
+
+[node name="Lion" instance=ExtResource("1_msm4p")]
+script = ExtResource("2_fv7xr")
+speed = 150.0
+
+[node name="CollisionShape2D" parent="." index="1"]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_fv7xr")
+
+[node name="AnimatedSprite2D" parent="." index="2"]
+sprite_frames = SubResource("SpriteFrames_iw5gm")
+animation = &"run"
+autoplay = "run"
+
+[node name="CollisionShape2D" parent="HitBox" index="0"]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_mx3ri")
+
+[node name="RayCast2D" type="RayCast2D" parent="." index="4"]
+rotation = 1.5707964
+target_position = Vector2(0, 150)

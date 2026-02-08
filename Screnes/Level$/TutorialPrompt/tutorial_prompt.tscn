@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg2k0ge4i378p"]
+
+[ext_resource type="Script" uid="uid://bdxyem88ycx4h" path="res://Screnes/Level$/TutorialPrompt/tutorial_prompt.gd" id="1_lwdcv"]
+[ext_resource type="Texture2D" uid="uid://bt3uymnimleb5" path="res://Asset/SimpleFlatKeys/Dark/E-Key.png" id="2_0emhd"]
+[ext_resource type="FontFile" uid="uid://cr4iw367n3wb8" path="res://Asset/Front/LuckiestGuy-Regular.ttf" id="2_qop0f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6hr0d"]
+font = ExtResource("2_qop0f")
+font_size = 30
+font_color = Color(0.12941177, 0.12941177, 0.12941177, 1)
+outline_size = 10
+
+[node name="TutorialPrompt" type="CanvasLayer"]
+script = ExtResource("1_lwdcv")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_right = 64.0
+offset_bottom = 159.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="VB" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelContainer/VB"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Shoot"
+label_settings = SubResource("LabelSettings_6hr0d")
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/VB"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("2_0emhd")
+expand_mode = 1

@@ -12,8 +12,6 @@ signal on_create_bullet(
 signal on_create_object(pos: Vector2, obj_type: Constants.ObjectType)
 	
 	
-	
-	
 func emit_on_player_hit(lives: int, shake: bool):
 	on_player_hit.emit(lives, shake);
 	

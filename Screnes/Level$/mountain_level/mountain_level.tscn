@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=4 uid="uid://brgfswa4jsnkm"]
+[gd_scene load_steps=10 format=4 uid="uid://brgfswa4jsnkm"]
 
 [ext_resource type="PackedScene" uid="uid://brccqirdfqw3n" path="res://Screnes/Base enemy/eagle.tscn" id="1_0bklu"]
+[ext_resource type="PackedScene" uid="uid://c7mpa0tvvw5kr" path="res://Screnes/npc_save/npc_save.tscn" id="1_8876u"]
 [ext_resource type="Texture2D" uid="uid://brkpje80k5dqd" path="res://Asset/Tiles/Terrain (16x16).png" id="1_w1eg4"]
 [ext_resource type="PackedScene" uid="uid://c0mkewonwmvu1" path="res://Screnes/Player/Player.tscn" id="2_p65jg"]
 [ext_resource type="PackedScene" uid="uid://cb5k4xvahxjpm" path="res://Screnes/object_maker/object_maker.tscn" id="3_wgaey"]
+[ext_resource type="PackedScene" uid="uid://djrgkc5njmivy" path="res://Screnes/Base enemy/SpikeWall/spike_floor.tscn" id="5_hkyyu"]
+[ext_resource type="PackedScene" uid="uid://c8jb71c2lp0qw" path="res://Screnes/Base enemy/Lion/lion.tscn" id="7_2mrc1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p65jg"]
 texture = ExtResource("1_w1eg4")
@@ -165,6 +168,9 @@ sources/0 = SubResource("TileSetAtlasSource_p65jg")
 
 [node name="MountainLevel" type="Node2D"]
 
+[node name="NPCSave" parent="." instance=ExtResource("1_8876u")]
+position = Vector2(263, 251)
+
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(0, -2)
 tile_map_data = PackedByteArray("AAAGABIAAAAGAAAAAAAHABIAAAAGAAAAAAAIABIAAAAGAAAAAAAIABEAAAAGAAAAAAAJABEAAAAGAAAAAAAKABEAAAAGAAAAAAALABEAAAAHAAAAAAAMABEAAAAIAAAAAAANABEAAAAGAAAAAAAOABEAAAAHAAAAAAAPABEAAAAIAAAAAAAQABEAAAAGAAAAAAARABEAAAAHAAAAAAASABEAAAAIAAAAAAATABEAAAAGAAAAAAAUABEAAAAHAAAAAAAVABEAAAAIAAAAAAAWABEAAAAGAAAAAAAXABEAAAAHAAAAAAAYABEAAAAIAAAAAAAZABEAAAAGAAAAAAAaABEAAAAHAAAAAAAbABEAAAAIAAAAAAAcABEAAAAGAAAAAAAdABEAAAAHAAAAAAAeABEAAAAGAAAAAAAfABEAAAAHAAAAAAAgABEAAAAIAAAAAAAhABAAAAAGAAAAAAAiABAAAAAHAAAAAAAjABAAAAAIAAAAAAAkAA8AAAAGAAAAAAAlAA8AAAAHAAAAAAAmAA8AAAAIAAAAAAAnAA4AAAAGAAAAAAAoAA4AAAAHAAAAAAApAA4AAAAIAAAAAAA=")
@@ -177,3 +183,9 @@ position = Vector2(131, 246)
 position = Vector2(237, 139)
 
 [node name="ObjectMaker" parent="." instance=ExtResource("3_wgaey")]
+
+[node name="SpikeFloor" parent="." instance=ExtResource("5_hkyyu")]
+position = Vector2(344, 270)
+
+[node name="Lion" parent="." instance=ExtResource("7_2mrc1")]
+position = Vector2(496, 253)

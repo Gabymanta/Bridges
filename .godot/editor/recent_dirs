@@ -1,10 +1,12 @@
-<<<<<<< HEAD
-res://Screnes/UI/
-res://Asset/sound/
-res://
-=======
+res://Screnes/Level$/tutorial_level/trigger_tutorial
+res://Global
+res://Screnes/Level$/TutorialPrompt
+res://Screnes/Level$/tutorial_level
+res://Screnes/Base enemy/Lion
 res://Asset/Enemies
 res://Screnes/Base enemy
+res://Screnes/npc_save
+res://Screnes/Base enemy/SpikeWall
 res://Screnes/explosion_anime
 res://Asset
 res://Screnes/base_bullet
@@ -15,6 +17,4 @@ res://Screnes/Shooter
 res://Screnes/Level$
 res://Screnes/Level$/mountain_level
 res://Screnes/Player
-res://Global
 res://Screnes
->>>>>>> 9ca4cdd5b8b55d95c823703f6fab274a0873ae1d
