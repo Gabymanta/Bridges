@@ -1,9 +1,6 @@
-res://Screnes/Level$/tutorial_level/trigger_tutorial/trigger_tutorial.tscn
-res://Screnes/Level$/tutorial_level/tutorial_level.tscn
-res://Screnes/Level$/tutorial_level/trigger_tutorial/trigger_tutorial.gd
-res://Screnes/Base enemy/Lion/lion.tscn
-res://Screnes/Base enemy/Lion/lion.gd
-res://Global/GameManager.gd
-res://Screnes/Player/Player.tscn
-res://Screnes/mainMenu/main_menue.tscn
-res://Screnes/Level$/tutorial_level/tutorial_level.gd
+res://main_menue.tscn
+res://main_menue.gd
+res://Screnes/UI/ui.tscn
+res://Screnes/UI/ui.gd
+res://Global/SignalHub.gd
+res://Screnes/Level$/mountain_level/mountain_level.tscn
