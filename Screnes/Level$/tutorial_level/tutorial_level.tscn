@@ -1,13 +1,16 @@
-[gd_scene load_steps=11 format=4 uid="uid://b3s57ops54o5r"]
+[gd_scene load_steps=14 format=4 uid="uid://b3s57ops54o5r"]
 
 [ext_resource type="Script" uid="uid://c6dk6ykl1arwm" path="res://Screnes/Level$/tutorial_level/tutorial_level.gd" id="1_26caf"]
 [ext_resource type="PackedScene" uid="uid://cb5k4xvahxjpm" path="res://Screnes/object_maker/object_maker.tscn" id="1_w3kxy"]
 [ext_resource type="Texture2D" uid="uid://it3m75wcxxki" path="res://Asset/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/autumn_.png" id="2_0ibgc"]
+[ext_resource type="PackedScene" uid="uid://din1glpuhqneu" path="res://Screnes/ScrollingBg/scrolling_bg.tscn" id="2_pfrh2"]
 [ext_resource type="PackedScene" uid="uid://c0mkewonwmvu1" path="res://Screnes/Player/Player.tscn" id="3_6j6rd"]
 [ext_resource type="PackedScene" uid="uid://3o7ws75ce118" path="res://Screnes/Level$/tutorial_level/trigger_tutorial/trigger_tutorial.tscn" id="4_0ibgc"]
 [ext_resource type="PackedScene" uid="uid://brccqirdfqw3n" path="res://Screnes/Base enemy/eagle.tscn" id="5_6j6rd"]
 [ext_resource type="PackedScene" uid="uid://djrgkc5njmivy" path="res://Screnes/Base enemy/SpikeWall/spike_floor.tscn" id="6_ga0t5"]
 [ext_resource type="PackedScene" uid="uid://c7mpa0tvvw5kr" path="res://Screnes/npc_save/npc_save.tscn" id="7_26caf"]
+[ext_resource type="AudioStream" uid="uid://dwm06pwv1mljl" path="res://Asset/sound/cayonQuestSkank.mp3" id="9_1opeg"]
+[ext_resource type="PackedScene" uid="uid://cnp8wow1drl1v" path="res://Screnes/UI/ui.tscn" id="9_gngmh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljt44"]
 texture = ExtResource("2_0ibgc")
@@ -220,6 +223,10 @@ sources/0 = SubResource("TileSetAtlasSource_ljt44")
 [node name="TutorialLevel" type="Node2D"]
 script = ExtResource("1_26caf")
 
+[node name="ScrollingBg" parent="." instance=ExtResource("2_pfrh2")]
+position = Vector2(1, -2)
+layer_scale = 0.75
+
 [node name="ObjectMaker" parent="." instance=ExtResource("1_w3kxy")]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -228,7 +235,8 @@ tile_map_data = PackedByteArray("AAABADYAAAABAAcAAAACADYAAAAAAAcAAAADADYAAAABAAc
 tile_set = SubResource("TileSet_ga0t5")
 
 [node name="Player" parent="." instance=ExtResource("3_6j6rd")]
-position = Vector2(81, 434)
+position = Vector2(54, 435)
+camera_max = Vector2(1024, -10000)
 
 [node name="Node" type="Node" parent="."]
 
@@ -267,4 +275,10 @@ position = Vector2(228, 131)
 position = Vector2(30, 143)
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_1opeg")
+volume_db = -10.0
 autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("9_gngmh")]

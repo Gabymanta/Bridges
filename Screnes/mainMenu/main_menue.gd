@@ -5,6 +5,7 @@ extends Control
 
 func _on_play_button_pressed() -> void:
 	audio_stream_player.play()
+	GameManager.load_next_level();
 
 
 func _on_quit_button_pressed() -> void:	

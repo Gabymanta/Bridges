@@ -7,3 +7,9 @@ res://Global/GameManager.gd
 res://Screnes/Player/Player.tscn
 res://Screnes/mainMenu/main_menue.tscn
 res://Screnes/Level$/tutorial_level/tutorial_level.gd
+res://Screnes/UI/ui.tscn
+res://Screnes/UI/ui.gd
+res://Screnes/mainMenu/main_menue.gd
+res://Screnes/Player/Player.gd
+res://Screnes/ScrollingBg/scrolling_bg.tscn
+res://Screnes/ScrollingBg/scrolling_bg.gd

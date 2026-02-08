@@ -1,15 +1,15 @@
+AudioStreamPlayer2D      - Matches the "sound" keyword.
+Timer
+ColorRect
+TextureButton
+CanvasLayer
 AnimationPlayer
 Sprite2D
 AudioStreamPlayer
 Node
 CollisionShape2D
 Area2D
-CanvasLayer
 VBoxContainer
 Label
 TextureRect
 HBoxContainer
-PanelContainer
-TileMapLayer
-TileMap
-LinkButton
