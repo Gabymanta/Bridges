@@ -1,6 +1,42 @@
 [gd_scene format=3 uid="uid://cnp8wow1drl1v"]
 
 [ext_resource type="Texture2D" uid="uid://du1ry0b1dg5vy" path="res://Asset/pixel heart 2.png" id="1_ilc2u"]
+[ext_resource type="Script" uid="uid://b4cxxuyyg7jqj" path="res://Screnes/UI/ui.gd" id="1_p08m5"]
+[ext_resource type="Texture2D" uid="uid://ddnm6e83m2yav" path="res://Asset/Button/level_select_frame_128.png" id="3_eusjq"]
+[ext_resource type="AudioStream" uid="uid://bhnt4ca4nbo1i" path="res://Asset/sound/button-click(chosic.com).mp3" id="4_4wi42"]
+[ext_resource type="AudioStream" uid="uid://c64agf4by6epn" path="res://Asset/Front/flopp med underleppa (flanger9).wav" id="5_jfs2s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_grban"]
+font_size = 120
+font_color = Color(0.15686275, 0.6039216, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_udmpx"]
+font_size = 35
+font_color = Color(0.11372549, 0.93333334, 0.05882353, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_bahcm"]
+font_size = 35
+font_color = Color(0.95686275, 0.023529412, 0.078431375, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4wi42"]
+font_size = 120
+font_color = Color(0.9475842, 0, 0.0034313374, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jfs2s"]
+font_size = 45
+font_color = Color(0.30264, 0.97, 0.038800023, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yeh78"]
+font_size = 45
+font_color = Color(1, 0.050000012, 0.050000012, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_60tmi"]
+font_size = 70
+font_color = Color(0.011764706, 0.80784315, 0.019607844, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_vwvqk"]
+font_size = 45
+font_color = Color(0.9411765, 0.85490197, 0.101960786, 1)
 
 [node name="UI" type="Control" unique_id=2005687299]
 layout_mode = 3
@@ -9,6 +45,76 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_p08m5")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=432898442]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.5
+offset_top = -11.5
+offset_right = 23.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.011656475
+
+[node name="Label" type="Label" parent="VBoxContainer2" unique_id=9951896]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Pause"
+label_settings = SubResource("LabelSettings_grban")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2" unique_id=425897924]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer2/HBoxContainer" unique_id=1299659598]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_eusjq")
+
+[node name="Label" type="Label" parent="VBoxContainer2/HBoxContainer/TextureButton" unique_id=683242656]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0015480118
+text = "Resume"
+label_settings = SubResource("LabelSettings_udmpx")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="VBoxContainer2/HBoxContainer/TextureButton/Label" unique_id=1676531790]
+stream = ExtResource("4_4wi42")
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer2/HBoxContainer" unique_id=1452400591]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_eusjq")
+
+[node name="Label" type="Label" parent="VBoxContainer2/HBoxContainer/TextureButton2" unique_id=895184827]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.008951355
+text = "Quit"
+label_settings = SubResource("LabelSettings_bahcm")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="VBoxContainer2/HBoxContainer/TextureButton2/Label" unique_id=1594600520]
+stream = ExtResource("5_jfs2s")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2126699622]
 layout_mode = 0
@@ -35,3 +141,131 @@ texture = ExtResource("1_ilc2u")
 [node name="TextureRect5" type="TextureRect" parent="HBoxContainer" unique_id=549853599]
 layout_mode = 2
 texture = ExtResource("1_ilc2u")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1801892066]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -325.5
+offset_top = -146.5
+offset_right = 325.5
+offset_bottom = 146.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1229277114]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+text = "Game Over"
+label_settings = SubResource("LabelSettings_4wi42")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1989167995]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/separation = 100
+
+[node name="Retry Button" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=176311964]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture_normal = ExtResource("3_eusjq")
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Retry Button" unique_id=1112713991]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Retry"
+label_settings = SubResource("LabelSettings_jfs2s")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="VBoxContainer/HBoxContainer/Retry Button" unique_id=1191930038]
+stream = ExtResource("4_4wi42")
+
+[node name="Quit Button" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1083993405]
+layout_mode = 2
+texture_normal = ExtResource("3_eusjq")
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Quit Button" unique_id=123087629]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_yeh78")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="VBoxContainer/HBoxContainer/Quit Button" unique_id=1056611073]
+stream = ExtResource("5_jfs2s")
+
+[node name="Level Completed" type="VBoxContainer" parent="." unique_id=353315941]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -281.5
+offset_top = -114.0
+offset_right = 281.5
+offset_bottom = 114.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Level Completed" unique_id=896688293]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 50
+text = "Level Completed"
+label_settings = SubResource("LabelSettings_60tmi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Level Completed" unique_id=203870343]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 100
+
+[node name="Next Level" type="TextureButton" parent="Level Completed/HBoxContainer" unique_id=434884111]
+layout_mode = 2
+texture_normal = ExtResource("3_eusjq")
+
+[node name="Label" type="Label" parent="Level Completed/HBoxContainer/Next Level" unique_id=357589592]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 70
+text = "Next 
+Level"
+label_settings = SubResource("LabelSettings_vwvqk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Level Completed/HBoxContainer/Next Level/Label" unique_id=336738081]
+stream = ExtResource("4_4wi42")
+
+[connection signal="pressed" from="VBoxContainer2/HBoxContainer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/HBoxContainer/TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Retry Button" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Quit Button" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Level Completed/HBoxContainer/Next Level" to="." method="_on_next_level_pressed"]
