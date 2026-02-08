@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://crj5ixd3lkjk8"]
+[gd_scene load_steps=12 format=3 uid="uid://crj5ixd3lkjk8"]
 
 [ext_resource type="Script" uid="uid://gdwdsnm6v35g" path="res://Screnes/mainMenu/main_menue.gd" id="1_6jjk0"]
 [ext_resource type="Texture2D" uid="uid://d3vaxvl4vyljt" path="res://Asset/Button/blue_button00.png" id="1_ldtmt"]
@@ -6,6 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://c66y4bp7dt1ls" path="res://Asset/sound/amongst-it-all-pecan-pie-main-version-32974-01-47.mp3" id="3_6jjk0"]
 [ext_resource type="AudioStream" uid="uid://bhnt4ca4nbo1i" path="res://Asset/sound/button-click(chosic.com).mp3" id="3_7k14n"]
 [ext_resource type="AudioStream" uid="uid://c64agf4by6epn" path="res://Asset/Front/flopp med underleppa (flanger9).wav" id="4_7k14n"]
+[ext_resource type="Texture2D" uid="uid://cfttljxq7bqhv" path="res://Asset/Button/yellow_button00.png" id="4_vqtjp"]
+[ext_resource type="Texture2D" uid="uid://bjhqcgy2pgxxg" path="res://Asset/Button/green_button00.png" id="5_vtqny"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ms0q7"]
 font_size = 200
@@ -64,6 +66,8 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_ldtmt")
+texture_pressed = ExtResource("4_vqtjp")
+texture_hover = ExtResource("5_vtqny")
 
 [node name="Label" type="Label" parent="HBoxContainer/Play Button"]
 layout_mode = 1
@@ -85,6 +89,8 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("1_ldtmt")
+texture_pressed = ExtResource("4_vqtjp")
+texture_hover = ExtResource("5_vtqny")
 
 [node name="Label" type="Label" parent="HBoxContainer/Quit Button"]
 layout_mode = 1
