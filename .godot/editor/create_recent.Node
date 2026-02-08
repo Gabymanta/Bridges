@@ -1,6 +1,6 @@
+AudioStreamPlayer2D      - Matches the "sound" keyword.
 CanvasLayer
 AudioStreamPlayer
-AudioStreamPlayer2D      - Matches the "sound" keyword.
 Timer
 ColorRect
 TextureButton

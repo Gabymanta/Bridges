@@ -1,43 +1,13 @@
-[gd_scene load_steps=36 format=3 uid="uid://c0mkewonwmvu1"]
+[gd_scene load_steps=37 format=3 uid="uid://c0mkewonwmvu1"]
 
 [ext_resource type="Script" uid="uid://1fdphho72k6h" path="res://Screnes/Player/Player.gd" id="1_fsbuh"]
 [ext_resource type="PackedScene" uid="uid://duxe3xt6vqkpm" path="res://Screnes/PlayerCam/PlayerCam.tscn" id="2_3hvo6"]
 [ext_resource type="Texture2D" uid="uid://cakdf433rb5ya" path="res://Asset/Player/try/43X43-ensemble.png" id="3_3hvo6"]
 [ext_resource type="PackedScene" uid="uid://duexjkiugm4ll" path="res://Screnes/Shooter/shooter.tscn" id="4_3hvo6"]
 [ext_resource type="AudioStream" uid="uid://08s1lvh5whcx" path="res://Asset/SoundEffect/jump.wav" id="5_j1hhs"]
+[ext_resource type="AudioStream" uid="uid://chv68s1y3wf2m" path="res://Asset/SoundEffect/damage.wav" id="6_mwyuw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rtn4k"]
-
-[sub_resource type="Animation" id="Animation_j1hhs"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [1]
-}
-
-[sub_resource type="Animation" id="Animation_118t2"]
-resource_name = "Jump"
-step = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [13]
-}
 
 [sub_resource type="Animation" id="Animation_poj0d"]
 resource_name = "Fall"
@@ -90,6 +60,37 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_118t2"]
+resource_name = "Jump"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [13]
+}
+
+[sub_resource type="Animation" id="Animation_j1hhs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
 }
 
 [sub_resource type="Animation" id="Animation_mwyuw"]
@@ -252,6 +253,10 @@ shape = SubResource("CapsuleShape2D_s4qru")
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_j1hhs")
+volume_db = -10.0
+
+[node name="HitSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_mwyuw")
 volume_db = -10.0
 
 [connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]

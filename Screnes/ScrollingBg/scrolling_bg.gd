@@ -67,7 +67,7 @@ func add_layer(t: Texture2D, time_offset: float) -> void:
 	var sprite = get_sprite(t)
 	
 	var par_la = Parallax2D.new()
-	par_la.scroll_offset.y = y_offset - 500 * layer_scale
+	par_la.scroll_offset.y = y_offset * layer_scale
 	par_la.repeat_times = 1
 	par_la.repeat_size.x = t.get_width()
 	par_la.scroll_scale.x = time_offset

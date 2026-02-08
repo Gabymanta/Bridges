@@ -225,6 +225,7 @@ script = ExtResource("1_26caf")
 
 [node name="ScrollingBg" parent="." instance=ExtResource("2_pfrh2")]
 position = Vector2(1, -2)
+y_offset = -250.0
 layer_scale = 0.75
 
 [node name="ObjectMaker" parent="." instance=ExtResource("1_w3kxy")]
