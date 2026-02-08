@@ -294,12 +294,6 @@ position = Vector2(968, -18)
 [node name="SpikeFloor12" parent="Enemies" instance=ExtResource("5_hkyyu")]
 position = Vector2(984, -18)
 
-[node name="SpikeFloor13" parent="Enemies" instance=ExtResource("5_hkyyu")]
-position = Vector2(1128, 238)
-
-[node name="SpikeFloor14" parent="Enemies" instance=ExtResource("5_hkyyu")]
-position = Vector2(1112, 238)
-
 [node name="SpikeFloor15" parent="Enemies" instance=ExtResource("5_hkyyu")]
 position = Vector2(1289, 175)
 
