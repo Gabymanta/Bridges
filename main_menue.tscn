@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://7c5cyi4ogyrg"]
+[gd_scene load_steps=0 format=3 uid="uid://7c5cyi4ogyrg"]
 
 [ext_resource type="Script" path="res://main_menue.gd" id="1_6jjk0"]
 [ext_resource type="Texture2D" uid="uid://d3vaxvl4vyljt" path="res://Asset/Button/blue_button00.png" id="1_ldtmt"]
